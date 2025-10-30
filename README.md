@@ -1,19 +1,81 @@
-# React + Vite
+**📚 My Book Library (React + Redux Project)**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧩 Description
 
-Currently, two official plugins are available:
+My Book Library is a React-based web application for managing and browsing a collection of books.
+Users can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse books by category (Fiction, Non-Fiction, Sci-Fi, etc.)
 
-## React Compiler
+View book details including title, author, description, and image
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Add new books through a validated form
 
-Note: This will impact Vite dev & build performances.
+Filter and search books by category, title, or author
 
-## Expanding the ESLint configuration
+Handle invalid routes gracefully with a custom 404 Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# online-book-store
+This project demonstrates concepts of React Router, Redux Toolkit, state management, props, event handling, and Bootstrap UI styling.
+
+**🚀 Features**
+
+✅ Dynamic book listing with filtering by category
+✅ Add, view, and browse books using Redux state
+✅ Search books by title or author
+✅ Dynamic routing with /books/:id and /books/:category
+✅ Custom “Page Not Found” (404) route
+✅ Fully responsive, dark-themed Bootstrap UI
+
+**🛠️ Technologies Used**
+
+⚛️ React (Vite)
+
+🧭 React Router DOM
+
+🧰 Redux Toolkit
+
+💅 Bootstrap 5
+
+🪄 JavaScript (ES6+)
+
+🖼️ Vite (for fast development and builds)
+
+**📁 Project Structure**
+src/
+│
+├── components/
+│   ├── Header.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── BrowseBooks.jsx
+│   ├── AddBook.jsx
+│   ├── BookDetails.jsx
+│   ├── NotFound.jsx
+│
+├── redux/
+│   ├── store.js
+│   ├── booksSlice.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+**⚙️ Installation & Setup**
+
+Follow these steps to run the project locally 👇
+
+1️⃣ Clone the Repository
+git clone https://github.com/anistars/online-book-store.git
+
+2️⃣ Navigate into the Project Folder
+cd online-book-store
+
+3️⃣ Install Dependencies
+npm install
+
+4️⃣ Run the Development Server
+npm run dev
+
+
+Now open the URL shown in the terminal (usually http://localhost:5173).
