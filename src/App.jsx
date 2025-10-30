@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/browse" element={<BrowseBooks />} />
           <Route path="/add" element={<AddBook />} />
-          {/* <Route path="/books/:category" element={<CategoryBooks />} /> */}
+          <Route path="/book/:category" element={<BrowseBooks />} />
           <Route path='/books/:id' element={<BooksDetails />} />
           <Route path="*" element={<h2 className='mt-5'>404 - Page Not Found</h2>} />
           
