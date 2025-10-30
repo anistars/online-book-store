@@ -79,3 +79,24 @@ npm run dev
 
 
 Now open the URL shown in the terminal (usually http://localhost:5173).
+
+**Usage Guide**
+
+Home Page: Displays all books grouped by category.
+![Home Page](src/assets/image.png)
+
+Browse Books: Filter and search through the collection.
+![All Books](src/assets/image-1.png)
+![Books Based on Category](src/assets/image-2.png)
+![Filter on Title](src/assets/image-3.png)
+![Filter on Author](src/assets/image-4.png)
+
+Add Book: Submit a new book via a form (validated inputs).
+![Add Book](src/assets/image-5.png)
+![Added Book on top](src/assets/image-6.png)
+
+Book Details: Click any book card to view detailed info.
+![Book Details](src/assets/image-7.png)
+
+404 Page: Handles any undefined routes and offers a link back to Home.
+![404 Error](src/assets/image-8.png)
