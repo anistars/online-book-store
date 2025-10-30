@@ -1,14 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import TopNav from './components/TopNav.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import BrowseBooks from './pages/BrowseBooks.jsx'
 import AddBook from './pages/AddBook.jsx'
-import CategoryBooks from './pages/CategoryBooks.jsx'
 import BooksDetails from './pages/BookDetails.jsx'
+// import NotFound from './pages/NotFound.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,8 +20,8 @@ function App() {
           <Route path="/add" element={<AddBook />} />
           <Route path="/book/:category" element={<BrowseBooks />} />
           <Route path='/books/:id' element={<BooksDetails />} />
-          <Route path="*" element={<h2 className='mt-5'>404 - Page Not Found</h2>} />
-          
+          <Route path="/add" element={<AddBook />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
     </>

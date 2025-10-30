@@ -106,7 +106,7 @@ const bookSlice = createSlice({
   },
   reducers: {
     addBook(state, action) {
-      state.books.push({
+      state.list.unshift({
         id: Date.now(),
         ...action.payload,
       });
